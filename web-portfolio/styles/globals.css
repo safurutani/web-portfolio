@@ -17,6 +17,12 @@ body {
   background: var(--background);
   font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @keyframes scroll {
   0% {
