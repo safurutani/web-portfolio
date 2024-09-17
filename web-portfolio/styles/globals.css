@@ -4,24 +4,57 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #23297f;
+  --text: #080A45;
+  --primary: #23297F;
+  --secondary: #585AB3;
+  --accent: #C5B6E0;
+  --accent2: #8F84D2;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-100%); /* Move through all items */
+  }
+}
+
+/* Carousel styling */
+.carousel-inner {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Adjust duration here for speed control */
+  width: max-content; /* Allow container to adjust based on content width */
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: auto; /* Allow items to maintain their respective widths */
+  object-fit: cover; /* Ensure proper image scaling */
+}
+
+/* Pause scrolling when hovered */
+.paused {
+  animation-play-state: paused;
+}
+
+/* Make sure the carousel has a max-width */
+.max-w-screen-xl {
+  max-width: 1280px; /* Adjust this value as per your design */
+}
+
+/* Hide scrollbar */
+.overflow-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-hidden {
+  scrollbar-width: none;
 }

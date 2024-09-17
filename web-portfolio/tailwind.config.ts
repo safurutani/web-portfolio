@@ -11,6 +11,14 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        text: "var(--text)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
+        accent2: "var(--accent2)",
+      },
+      fontFamily: {
+        rubik: ["Rubik"],
       },
     },
   },
