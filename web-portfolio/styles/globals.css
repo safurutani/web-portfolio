@@ -112,6 +112,9 @@ main {
   width: 100%;
   margin: 1rem auto;
 }
+.unity-img {
+  margin: 1rem auto;
+}
 .view-project-button {
   display: inline-block;
   margin-top: 10px;

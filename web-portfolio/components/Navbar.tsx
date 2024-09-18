@@ -10,13 +10,18 @@ const Navbar = () => {
       setIsOpen(false);
     }
   };
-
+  
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  // Closing dropdown when selecting a category
+  const handleSelect = () => {
+    setIsOpen(false);
+  };
 
   return (
     <nav className="border-b-2 border-text text-text p-4">
@@ -33,11 +38,11 @@ const Navbar = () => {
             </button>
             <ul
               ref={dropdownRef}
-              className={`absolute mt-2 ${isOpen ? 'block' : 'hidden'} bg-white text-text z-50 transition-opacity duration-300  border-solid border-2 border-accent`}
+              className={`absolute mt-2 ${isOpen ? 'block' : 'hidden'} bg-white text-text z-50 transition-opacity duration-300 border-solid border-2 border-accent`}
             >
-              <li><Link href="/projects/websites" className="block px-4 py-2 hover:bg-gray-200">Websites</Link></li>
-              <li><Link href="/projects/mobile-apps" className="block px-4 py-2 hover:bg-gray-200">Mobile Apps</Link></li>
-              <li><Link href="/projects/unity-games" className="block px-4 py-2 hover:bg-gray-200">Unity Games</Link></li>
+              <li><Link href="/projects/websites" className="block px-4 py-2 hover:bg-gray-200" onClick={handleSelect}>Websites</Link></li>
+              <li><Link href="/projects/mobile-apps" className="block px-4 py-2 hover:bg-gray-200" onClick={handleSelect}>Mobile Apps</Link></li>
+              <li><Link href="/projects/unity-games" className="block px-4 py-2 hover:bg-gray-200" onClick={handleSelect}>Unity Games</Link></li>
             </ul>
           </li>
           <li><Link href="/about">About</Link></li>
