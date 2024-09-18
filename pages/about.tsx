@@ -2,7 +2,7 @@ const About = () => (
     <div className="container mx-auto p-8 max-w-3xl">
       <h1 className="text-4xl font-bold mb-8">About Me</h1>
       <p>
-      Hello! I am a former pre-veterinary student with a Bachelor's degree in Animal Science from Cal Poly San Luis Obispo, who has transitioned into the field of computer science. I found a passion for the logical thinking and problem solving aspects of coding. What excites me about programming is the ability to conceptualize an idea, apply my creativity, and see it come to life.
+      Hello! I am a former pre-veterinary student with a Bachelor&apos;s degree in Animal Science from Cal Poly San Luis Obispo, who has transitioned into the field of computer science. I found a passion for the logical thinking and problem solving aspects of coding. What excites me about programming is the ability to conceptualize an idea, apply my creativity, and see it come to life.
       </p>
       <br></br>
       <p>
@@ -21,7 +21,7 @@ const About = () => (
         </div>
         <br></br>
         <p>
-          I have since broadened my expertise through additional courses offered by Udemy, community college, and LinkedIn Learning. They allowed me to explore WPF, SQL, game development, Java, and more. I've also gained hands-on experience with Android development in Google's Compose course.
+          I have since broadened my expertise through additional courses offered by Udemy, community college, and LinkedIn Learning. They allowed me to explore WPF, SQL, game development, Java, and more. I&apos;ve also gained hands-on experience with Android development in Google&apos;s Compose course.
         </p>
         <br></br>
         <p>
