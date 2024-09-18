@@ -1,23 +1,58 @@
-const skills = [
-    { name: 'HTML', icon: '/icons/html.svg' },
-    { name: 'Python', icon: '/icons/python.svg' },
-    { name: 'C++', icon: '/icons/cpp.svg' },
-    // Add more skills here
-  ];
-  
-  const Skills = () => (
-    <section className="p-8">
-      <h2 className="text-2xl font-bold mb-4">Skills</h2>
-      <div className="grid grid-cols-3 gap-4">
-        {skills.map(skill => (
-          <div key={skill.name} className="flex flex-col items-center">
-            <img src={skill.icon} alt={skill.name} className="w-16 h-16" />
-            <p className="mt-2">{skill.name}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-  
-  export default Skills;
-  
+const Skills = () => (
+  <div className="skills-section mt-24 pt-4 pb-2 mb-24">
+    <div className="skill">
+      <i className="devicon-javascript-plain icon-size"></i>
+      <p className="text-size">JavaScript</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-react-original icon-size"></i>
+      <p className="text-size">React</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-redux-original icon-size"></i>
+      <p className="text-size">Redux</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-typescript-plain icon-size"></i>
+      <p className="text-size">TypeScript</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-python-plain icon-size"></i>
+      <p className="text-size">Python</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-kotlin-plain icon-size"></i>
+      <p className="text-size">Kotlin</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-html5-plain icon-size"></i>
+      <p className="text-size">HTML</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-css3-plain icon-size"></i>
+      <p className="text-size">CSS</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-tailwindcss-plain icon-size"></i>
+      <p className="text-size">Tailwind CSS</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-csharp-plain icon-size"></i>
+      <p className="text-size">C#</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-cplusplus-plain icon-size"></i>
+      <p className="text-size">C++</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-unity-original icon-size"></i>
+      <p className="text-size">Unity</p>
+    </div>
+    <div className="skill">
+      <i className="devicon-android-plain icon-size"></i>
+      <p className="text-size">Android Studio</p>
+    </div>
+  </div>
+);
+
+export default Skills;

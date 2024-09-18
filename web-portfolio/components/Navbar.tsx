@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-accent text-text p-4">
+    <nav className="border-b-2 border-text text-text p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">SF</Link>
         <ul className="flex space-x-8">
@@ -33,7 +33,7 @@ const Navbar = () => {
             </button>
             <ul
               ref={dropdownRef}
-              className={`absolute mt-2 ${isOpen ? 'block' : 'hidden'} bg-white text-text transition-opacity duration-300  border-solid border-2 border-accent`}
+              className={`absolute mt-2 ${isOpen ? 'block' : 'hidden'} bg-white text-text z-50 transition-opacity duration-300  border-solid border-2 border-accent`}
             >
               <li><Link href="/projects/websites" className="block px-4 py-2 hover:bg-gray-200">Websites</Link></li>
               <li><Link href="/projects/mobile-apps" className="block px-4 py-2 hover:bg-gray-200">Mobile Apps</Link></li>

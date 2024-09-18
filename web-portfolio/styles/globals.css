@@ -12,11 +12,6 @@
   --accent2: #8F84D2;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
-}
 @font-face {
   font-family: 'Rubik';
   src: url('/fonts/Rubik-Regular.ttf') format('truetype');
@@ -24,6 +19,28 @@ body {
   font-style: normal;
 }
 
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+.courses {
+  list-style-type: disc; /* This ensures that bullets are displayed */
+}
+
+
+/* Carousel styling */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -33,17 +50,16 @@ body {
   }
 }
 
-/* Carousel styling */
 .carousel-inner {
   display: flex;
   animation: scroll 30s linear infinite; /* Adjust duration here for speed control */
-  width: max-content; /* Allow container to adjust based on content width */
+  width: max-content; 
 }
 
 .carousel-item {
   flex-shrink: 0;
-  width: auto; /* Allow items to maintain their respective widths */
-  object-fit: cover; /* Ensure proper image scaling */
+  width: auto; 
+  object-fit: cover;
 }
 
 /* Pause scrolling when hovered */
@@ -51,9 +67,8 @@ body {
   animation-play-state: paused;
 }
 
-/* Make sure the carousel has a max-width */
 .max-w-screen-xl {
-  max-width: 1280px; /* Adjust this value as per your design */
+  max-width: 1280px; 
 }
 
 /* Hide scrollbar */
@@ -63,4 +78,58 @@ body {
 
 .overflow-hidden {
   scrollbar-width: none;
+}
+
+/* Skill Icons */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill {
+  text-align: center;
+}
+
+.icon-size {
+  font-size: 3rem; 
+}
+
+.text-size {
+  font-size: 1rem; 
+  margin-top: 0.5rem; 
+}
+
+/* Contact */
+.contact {
+  font-size: 1.4rem;
+}
+
+/* Projects */
+.web-img {
+  height: auto;
+  width: 100%;
+  margin: 1rem auto;
+}
+.view-project-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.description {
+  white-space: pre-wrap; /* Preserves whitespace and newlines */
+}
+
+.app-screenshot {
+  margin: 1rem auto;
+  width: 100%;
+  height: auto;
 }
