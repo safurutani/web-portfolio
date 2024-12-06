@@ -7,6 +7,12 @@ const Websites: NextPage = () => (
     <h1 className="text-4xl font-bold mb-8">Websites</h1>
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <div className="bg-white p-6 rounded-lg shadow-md shadow-accent2">
+        <h2 className="text-2xl font-semibold">Spotify Album Playlist</h2>
+        <img src="/images/playlist-title.png" alt="Spotify Ranked Album Playlist Generator" className="web-img"></img>
+        <CollapsibleDescription description={"Built using Next.js for the frontend and serverless functions for backend API calls, this web app integrates with Spotify's Web API. Users log into their Spotify account and can create a playlist based off an album, rearranging the tracks to their preference."} />
+        <Link href="https://album-ranking-playlist.vercel.app/" target="_blank" className="mt-4 inline-block text-secondary view-project-button hover:underline">View Project</Link>
+      </div>
+      <div className="bg-white p-6 rounded-lg shadow-md shadow-accent2">
         <h2 className="text-2xl font-semibold">Taylor Swift Album Ranker</h2>
         <img src="/images/tswift album ranker.png" alt="Taylor Swift album ranking" className="web-img"></img>
         <CollapsibleDescription description={"This project is a Taylor Swift album ranker built using React. It allows users to rate each song on a scale of 1-10 for each album. Then it will calculate the average rating per album and order the albums based on the ranking."} />

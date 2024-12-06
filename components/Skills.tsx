@@ -45,6 +45,10 @@ const Skills = () => (
       <p className="text-size">C++</p>
     </div>
     <div className="skill">
+      <i className="devicon-nextjs-plain icon-size"></i>
+      <p className="text-size">Next.js</p>
+    </div>
+    <div className="skill">
       <i className="devicon-unity-original icon-size"></i>
       <p className="text-size">Unity</p>
     </div>
