@@ -15,7 +15,7 @@ const Websites: NextPage = () => (
       <div className="bg-white p-6 rounded-lg shadow-md shadow-accent2">
         <h2 className="text-2xl font-semibold">Taylor Swift Album Ranker</h2>
         <img src="/images/tswift album ranker.png" alt="Taylor Swift album ranking" className="web-img"></img>
-        <CollapsibleDescription description={"This project is a Taylor Swift album ranker built using React. It allows users to rate each song on a scale of 1-10 for each album. Then it will calculate the average rating per album and order the albums based on the ranking."} />
+        <CollapsibleDescription description={"This project is a Taylor Swift album ranker built using React and Firebase for user authentication/data. It allows users to rate each song on a scale of 1-10 for each album. Then it will calculate the average rating per album and order the albums based on the ranking."} />
         <Link href="https://tswift-album-ranker.vercel.app/" target="_blank" className="mt-4 inline-block text-secondary view-project-button hover:underline">View Project</Link>
       </div>
       <div className="bg-white p-6 rounded-lg shadow-md shadow-accent2">
