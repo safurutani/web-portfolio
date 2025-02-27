@@ -6,6 +6,12 @@ const Websites: NextPage = () => (
   <div className="container mx-auto p-8">
     <h1 className="text-4xl font-bold mb-8">Websites</h1>
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="bg-white p-6 rounded-lg shadow-md shadow-accent2">
+        <h2 className="text-2xl font-semibold">Habit Tracker</h2>
+        <img src="/images/calendar view.png" alt="Calendar View of Habit Tracker" className="web-img"></img>
+        <CollapsibleDescription description={"The Habit Tracker web app is built with C# and ASP.NET Core for the backend and Angular for the frontend, using SQL Server for data. Users can create, edit, manage, and update habits. It features streaks, completion history, a calendar view, and color coding."} />
+        <Link href="https://github.com/safurutani/habit-tracker" target="_blank" className="mt-4 inline-block text-secondary view-project-button hover:underline">View Project</Link>
+      </div>
       <div className="bg-white p-6 rounded-lg shadow-md shadow-accent2">
         <h2 className="text-2xl font-semibold">Spotify Album Playlist</h2>
         <img src="/images/playlist-title.png" alt="Spotify Ranked Album Playlist Generator" className="web-img"></img>

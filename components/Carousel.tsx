@@ -43,6 +43,11 @@ const Carousel = () => {
       >
         <div className="w-[64rem]"></div>
         <img
+          src="/images/calendar view.png"
+          alt="Spotify Album Playlist"
+          className=" carousel-item px-2"
+        />
+        <img
           src="/images/playlist-title.png"
           alt="Spotify Album Playlist"
           className=" carousel-item px-2"
